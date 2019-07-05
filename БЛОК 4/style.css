@@ -1,0 +1,139 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 1000px;
+	font-family: Arial;
+	background-color: #f5f5f5;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+fieldset {
+	padding: 0 40px 30px;
+
+}
+
+.right-case fieldset, .gaga li, form {
+	border: none;
+	background-color: white;
+}
+.gaga ul {
+	margin: 20px 0;
+}
+p {
+	background-color: #f5f5f5;
+	z-index: 1;
+}
+input, textarea {
+	background-color: #f5f5f5;
+	border: none;
+	width: 390px;
+}
+textarea {
+	resize: none;
+}
+h2 {
+	font-size: 21px;
+	font-weight: normal;
+}
+h4 {
+	color: #8993ad;
+	font-weight: normal;
+	font-size: 18px;
+}
+ul{
+	padding: 0;
+	z-index: 2;
+}
+li {
+	list-style: none;
+	padding-left: 20px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+label {
+	font-size: 14px;
+}
+.fixedcontainer {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+.left-case, .right-case, .test {
+	width: 470px;
+	padding-top: 60px;
+}
+.test {
+	margin-top: 20px;
+}
+.left-case {
+	float: left;
+}
+.right-case {
+	float: right;
+}
+.add-case {
+	background-color: #2174fd;
+	width: 225px;
+	padding: 20px 55px;
+	cursor: pointer;
+	outline: none;
+	margin: 0 40px 30px;
+}
+.delete, .open-close {
+	border: none;
+	background-color: unset;
+	outline: none;
+	cursor: pointer;
+	opacity: .9;
+	border-radius: 10px;
+}
+.delete {
+	color: red;
+	margin-left: 20px;
+	padding: 0;
+}
+.delete:hover, .open-close:hover {
+	opacity: 1;
+	border-bottom: 1px solid red;
+}
+.delete:active, .open-close:active {
+	background-color: silver;
+}
+.open-close {
+	float: right;
+	margin-right: 20px;
+	transition: transform .7s;
+}
+.open-close.active {
+	transform: rotateZ(90deg);
+}
+
+.task-header {
+	border-bottom: 1px solid #f7f7f7;
+	padding: 10px 0;
+
+}
+.task-description {
+	color: grey;
+	opacity: .5;
+	padding: 5px 0;
+	margin-bottom: 15px;
+	font-size: 14px;
+	height: 90px;
+
+}
+.deleted-me {
+	color: #8993ad;
+	margin: 40px 0;
+}

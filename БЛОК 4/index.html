@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Список дел</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	<div class="fixedcontainer clearfix">
+		<div class="left-case">
+			<h2>Список дел:</h2>
+			<div class="gaga">
+				<p class="deleted-me">Список пуст...</p>
+				<ul class="hidden">	
+
+				</ul>
+			</div>
+		</div>
+		<div class="right-case">
+			<h2>Добавить новое дело:</h2>
+			<form>
+				<fieldset>
+					<h4><label for="name-case">* Название</label></h4>
+					<input type="text" class="name-case" required="required">
+				</fieldset>
+				<fieldset>
+					<h4><label for="about-case">* Описание</label></h4>
+					<textarea class="about-case" cols="40" rows="12" required="required"></textarea>
+				</fieldset>
+				<input type="submit" value="Добавить дело" class="add-case">
+			</form>
+		</div>
+	</div>
+
+	<script src="scrypt.js"></script>
+
+</body>
+</html>

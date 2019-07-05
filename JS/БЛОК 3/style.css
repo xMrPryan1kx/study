@@ -1,0 +1,10 @@
+* {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.game {
+    width: 300px;
+    height: 200px;
+    background-color:rgb(197, 196, 194);
+    text-align: center;
+}

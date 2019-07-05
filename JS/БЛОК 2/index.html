@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="year-space flex" id="gaga">
+        <div class="left" onclick="year1()">С 1900 года по 2019</div>
+        <div class="right" onclick="year2()"><p>Выбрать самому</p></div>
+        <button class="close" onclick="displayNone()"></button>
+    </div>    
+    <div class="fixed-container flex">
+        <div class="test flex contrast" onclick="klara()">Сравнивание чисел</div>
+        <div class="test flex year" onclick="displayFlex()">Вычисление Високосного года</div>
+        <div class="test flex infinity" onclick="finity()">Бесконечные числа</div>
+    </div>
+
+    <script src="scrypt.js"></script>
+</body>
+</html>
