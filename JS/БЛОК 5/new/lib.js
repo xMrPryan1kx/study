@@ -41,9 +41,11 @@ window.lib =  (function (){
     }
     function checkCount() {
         console.log('Количество ваших жизней :' + LIVES);
+        
         if( LIVES == 1) {
             alert('ВНИМАНИЕ: У вас осталась одна жизнь!!!');
         }
+        
         return --LIVES < 0 ? attemptsEnd() : start(); 
         
     }
