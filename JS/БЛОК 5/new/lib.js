@@ -23,6 +23,7 @@ window.lib =  (function (){
     function start () {
         console.log('Количество ваших жизней :' + livesCopy);
         var userAnswer = prompt('Введите ваше число!');
+        console.log('Введенное вами число : ' + userAnswer);
         
         if ( userAnswer === null) {
             alert('Игра окончена!');
@@ -36,10 +37,10 @@ window.lib =  (function (){
             return start();
             
         } else if (userAnswer < random) {
-            alert ('Ваше число меньше');
+            console.log('Ваше число меньше');
             return checkCount();
         } else if (userAnswer > random) {
-            alert('Ваше число больше')
+            console.log('Ваше число больше')
             return checkCount();
         } else if (parseInt(userAnswer) === random) {
             alert('Бинго!');
@@ -54,6 +55,8 @@ window.lib =  (function (){
         
         if( livesCopy == 1) {
             alert('ВНИМАНИЕ: У вас осталась одна жизнь!!!');
+        } else if ( livesCopy == 0) {
+            console.log('Загаданное число было : ' + random);
         }
         // возвращает 1-true 2-false
         return livesCopy <= 0 ? attemptsEnd() : start(); 
@@ -70,6 +73,8 @@ window.lib =  (function (){
             start();
         }
     };
+
+    
     function attemptsEnd() {
         alert('Ваши попытки закончились!');
         confirmNewGame();

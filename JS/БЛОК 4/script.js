@@ -12,6 +12,7 @@ function fullDate() {
     console.log( nowDate + DATE_HOURS + DATE_MINUTES + DATE_SECONDS);
 }
 
+// Функция которая приводит формы слов относительно цифр(единица, десятки, остальные)
 function declOfNum(number, titles) {  
     var cases = [2, 0, 1, 1, 1, 2];  
     return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
@@ -20,7 +21,7 @@ function declOfNum(number, titles) {
 // setInterval(fullDate, 1000);
 
 (function authentification() { 
-    var users = [
+    var users = [  //создание объекта ключ:значение
         {
             login: 'Vasya',
             password: '123',
