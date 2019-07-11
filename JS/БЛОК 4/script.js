@@ -44,6 +44,13 @@ function declOfNum(number, titles) {
 
 
 
+    
+
+    
+
+
+
+
 
                     //ПЕРЕБОР МЕТОДОМ FIND
 
@@ -52,6 +59,8 @@ function declOfNum(number, titles) {
     // })
 
     // fullAuth ? alert('Добро пожаловать, ' + fullAuth.name + '!' ) : alert('Ошибка авторизации!')
+
+
 
 
 
