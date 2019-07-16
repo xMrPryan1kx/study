@@ -11,7 +11,7 @@ function fullDate() {
     
     console.log( nowDate + DATE_HOURS + DATE_MINUTES + DATE_SECONDS);
 }
-
+    
 // Функция которая приводит формы слов относительно цифр(единица, десятки, остальные)
 function declOfNum(number, titles) {  
     var cases = [2, 0, 1, 1, 1, 2];  
