@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    
+    
 </head>
 <body>
     <header class="header">
@@ -20,7 +23,20 @@
         </div>
         <div class="fixed-container flex logo">
             <div class="tray">
-                <a href="#">&#9776;</a>
+                <div id="menu-icon">
+                    <button class="menu-button">&#9776;</button>
+                </div>
+                <ul id="hidden-menu-container">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Общество</a></li>
+                    <li><a href="#">Экономика</a></li>
+                    <li><a href="#">В&nbsp;мире</a></li>
+                    <li><a href="#">Проишествия</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Туризм</a></li>
+                </ul>
             </div>
             <div class="logo1">
                 <a href="#" class="position">
@@ -256,6 +272,8 @@
             &copy;Новостное агенство, 2017-2018 все права защищены
         </div>
     </footer>
+    <script src="scrypt.js"></script>
+    
 </body>
 
 </html>
