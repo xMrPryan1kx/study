@@ -8,11 +8,10 @@ var menu = document.getElementById('hidden-menu-container');
 //     alert('Работает');
 // }
 
-$('.menu-icon').click(function() {
-    alert('Работает');
-    $('hidden-menu-container').toggleClass('nav-active');
+function tapTap() {
+    menu.classList.toggle('nav-active');
     
-})
+}
 
 
 

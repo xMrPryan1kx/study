@@ -7,6 +7,8 @@ var close = document.getElementsByClassName('close');
 
 
 
+
+
 function klara() {
     function isNumeric(n) {
         return !isNaN(parseFloat(n)) && isFinite(n);

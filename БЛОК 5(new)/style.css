@@ -142,10 +142,14 @@ a {
     text-decoration: none;
     list-style: none;
     font-size: 18px;
+}
+.hidden {
     display: none;
 }
 .nav-active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .central-container {
     background-color: #f9f9f9;
@@ -534,6 +538,9 @@ address {
     .central-text a {
         font-size: 38px;
     }
+    .column-left {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 675px) {
@@ -610,8 +617,10 @@ address {
         display: block;
         order: -3;
         width: 20%;
-        text-align: center;
         font-size: 30px;
+    }
+    .logo {
+        align-items: unset;
     }
     .logo1 {
         width: 60%;
@@ -684,9 +693,11 @@ address {
     .text-img-central {
         bottom: 10px;
     }
-    .logo {
-        height: 700px;
+    #menu-icon {
+        display: flex;
+        justify-content: flex-start;
     }
+
 
 
 }
