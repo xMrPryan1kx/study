@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+        <title>Отправка заявки на конференцию</title>
+</head>
+<body>
+    <header>
+        <h3>Отправка заявки на конференцию</h3>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Основные данные</legend>
+                <p><label for="fio">* Фамилия, имя, отчество:</label></p>
+                <input type="text" id="fio" size="40" required="required">
+                <p><label for="happy_birthday">Дата рождения:</label>
+                <input type="date" id="happy_birthday">         <!-- Warning: The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill. ПИШЕТ ВАЛИДАТОР. Информации особо по поводоу полифила не нашел -->
+                <h5>Пол:</h5>
+                <p><input type="radio" name="sex" id="male">
+                <label for="male">Мужской</label>
+                <input type="radio" name="sex" id="female">
+                <label for="female">Женский</label></p>
+            </fieldset>
+
+            <fieldset>                 
+                <legend>Данные для создания личного кабинета</legend>
+                <p><label for="email">* Адрес электронной почты:</label></p>
+                <input type="email" id="email" size="40" required="required">
+                <p><label for="password">* Пароль для создания личного кабинета:</label></p>
+                <input type="password" id="password" size="40" required="required">
+                <p><label for="check_password">* Подтверждения пароля:</label></p>
+                <input type="password" id="check_password" size="40" required="required"><br><br>
+            </fieldset>
+
+            <fieldset>    
+                <legend>Материалы для конференции</legend>
+                <p><label for="theme_report">* Тема доклада:</label></p>
+                <input type="text" id="theme_report" size="40" required="required">
+                <p><label for="tezis_report">* Тезисы доклада (не более 1000 символов):</label></p>
+                <textarea id="tezis_report" cols="40" rows="8" required="required"></textarea>
+                <p>Файл презентации:</p>
+                <input type="file"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Дополнительные опции</legend>            
+                <input type="checkbox" name="options" id="hotel_life" value="dop1">     <!-- был вариант с параграфом,но смотрится криво с отступами  -->
+                <label for="hotel_life">Проживание в отеле</label><br>
+                <input checked type="checkbox" name="options" id="breakfast" value="dop2">
+                <label for="breakfast">Завтрак</label><br>
+                <input type="checkbox" name="options" id="lunch" value="dop3">
+                <label for="lunch">Обед</label><br>
+                <input type="checkbox" name="options" id="dinner" value="dop4">
+                <label for="dinner">Ужин</label>
+            </fieldset>        
+            <br>
+            <p><input type="submit" value="Отправить"></p>
+        </form>
+    </main>
+    <footer>
+        <small>* Поля, отмеченные звездочкой, являются обязательными для заполнения</small>     <!-- обычно "звездочка это сноска, и пишется в самом низу страницы,поэтому я посчитал ее футером" -->
+    </footer>  
+
+</body>
+</html>
