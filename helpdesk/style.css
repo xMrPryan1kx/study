@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.fixed-container {
+    max-width: 1000px;
+    padding: 20px;
+}
+.flex {
+    display: flex;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.column-left {
+    width: 25%;
+    height: 300px;
+    border: 1px solid violet;
+}
+.main-content {
+    text-align: center;
+    align-items: center;
+}
+.column-left, .column-main {
+    border-radius: 15px;
+}
+.add-work, .search-work {
+    height: 50%;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+h4 {
+    padding-bottom: 20px;
+    align-items: flex-end;
+}
+
+h4:hover {
+    background-color: wheat;
+    cursor: pointer;
+} 
+h4:active {
+    cursor: url('kulak.jpg'), auto;
+}
+input {
+    border: 1px solid violet;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+
+}
+.add-work {
+    flex-direction: column;
+    border-bottom: 1px solid violet;
+}
+.column-main {
+    width: 80%;
+    height: 300px;
+    border: 1px solid violet;
+}
+fieldset {
+    border: none;
+}
+.button {
+    margin: 10px;
+    background-color: yellow;
+    color: blue;
+    padding: 5px;
+    border-radius: 20px;    
+}

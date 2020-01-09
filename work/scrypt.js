@@ -53,8 +53,9 @@ function takeGroup(item, name) {
 
 function itemWork(nameObj,prev,sec,prev1,sec1) {
     nameObj.click(function() {
-        var prov = $('.list');
-        probs(prev,sec,prev1,sec1);
+        $('.group').removeClass('active');
+        $(this).addClass('active');
+        return probs(prev,sec,prev1,sec1);
     });
 }
 function probs(hops1, hops2, hops3, hops4) {
@@ -69,8 +70,9 @@ function probs(hops1, hops2, hops3, hops4) {
     }
 }
 
-itemWork(button1,item1,teacher1,item2,teacher2);
-itemWork(button2,item2,teacher2,item3,teacher3);
-itemWork(button3,item3,teacher3,item4,teacher4);
-itemWork(button4,item4,teacher4,item5,teacher5);
-itemWork(button5,item5,teacher5,item1,teacher1);
+/*var pak1 = */itemWork(button1,item1,teacher1,item2,teacher2);
+/*var pak2 = */itemWork(button3,item3,teacher3,item4,teacher4);
+/*var pak3 = */itemWork(button2,item2,teacher2,item3,teacher3);
+/*var pak4 = */itemWork(button4,item4,teacher4,item5,teacher5);
+/*var pak5 = */itemWork(button5,item5,teacher5,item1,teacher1);
+

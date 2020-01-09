@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="main-bar">
+                <div class="fixed-container flex">
+                    <h1>Петушиная залупка</h1>
+                    <img src="https://avatars.mds.yandex.net/get-pdb/1101614/0280cab9-8e0b-4b26-a592-ccee3fca3f7a/s1200?webp=false" alt="Логотип" class="logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="fixed-container flex main-content">
+            <aside class="column-left">
+                <div class="add-work flex" onclick="change()">
+                    <h4 class="flex">Добавить задачу</h4>
+                    <form>
+                        <fieldset>
+                            <h5><label for="todo-list">Название</label></h5>
+                            <input type="text" id="todo-list">
+                        </fieldset>
+                        <input type="submit" value="добавить" class="button" onclick="petuh()">
+                    </form>
+                </div>
+                <div class="search-work flex">
+                    <h4 class="flex">Посмотреть задачу</h4>
+                </div>
+            </aside>
+            <div class="column-main">
+                <div class="main-content"></div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="scrypt.js"></script>
+</body>
+</html>
