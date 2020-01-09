@@ -42,6 +42,7 @@ function UserList() {
 var userList = new UserList();
 
 while (userAnswer !== null) {
+    
     var userAnswer = prompt('Введите имя и фамилию');
     
     if (userAnswer !== null) {
