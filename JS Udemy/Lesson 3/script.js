@@ -73,7 +73,6 @@ function checkSavings() {
   }
 }
 checkSavings();
-console.log('ты лучший');
 
 
 function chooseOptExpenses() {
