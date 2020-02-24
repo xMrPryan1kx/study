@@ -1,6 +1,10 @@
 'use strict'
 
+let jsAnswer = prompt('Введите js', 'alert("Hello")');
 
+const js = new Function(jsAnswer);
+
+js();
 
 
 
