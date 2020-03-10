@@ -6,7 +6,7 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
 }
 .logo {
     width: 70px;
@@ -48,8 +48,12 @@
 }
 .home, .portfolio, .about, .contacts {
     display: none;
+    background-color: rgba(128, 128, 128, .4);
+    padding: 20px 0;
 }
 
 .active {
-    display: block;
+    text-decoration: underline;
+    color: rgba(179, 201, 160, 0.589);
 }
+
