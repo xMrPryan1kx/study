@@ -25,20 +25,21 @@
     display: flex;
 }
 .nav-bar-list li {
-    margin-right: 10px;
+    margin-right: 15px;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 18px;
+    letter-spacing: 4px;
 }
 .nav-bar-list li:last-child {
     margin-right: 0;
 }
 .nav-bar-list li:hover {
     text-decoration: underline;
-    color: rgba(226, 215, 215, 0.432);
+    color: rgb(245, 2, 2);
 }
 .nav-bar-list li:active {
-    color: rgba(34, 30, 30, 0.781);
+    color: rgba(236, 12, 12, 0.897);
     text-decoration: none;
 }
 .time {
@@ -53,7 +54,7 @@
 }
 
 .active {
-    text-decoration: underline;
-    color: rgba(179, 201, 160, 0.589);
+    border-bottom: 1px solid rgb(245, 2, 2);
+    color: rgb(245, 2, 2);
 }
 
