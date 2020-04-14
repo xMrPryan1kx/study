@@ -51,7 +51,7 @@ const topFunction = () => {
 }
 
 
-const basketBtn = document.querySelector('#button-basket');
+const basketBtn = document.querySelector('.button-basket');
 const modal = document.querySelector('.modal');
 const exit = document.querySelector('.close');
 
@@ -63,4 +63,5 @@ basketBtn.addEventListener('click', function() {
 exit.addEventListener('click', () => {
   modal.classList.remove('flex-active');
 })
+
 

@@ -161,8 +161,9 @@ body {
     box-shadow: -10px 0 20px rgba(51, 51, 51, 0.5);
     background: #fff1b8;
     transform: scale(1.05);
-    transition: .15s;
+    transition: .25s;
 }
+
 .card:hover .card-title {
     color: rgb(142, 180, 3);
 }
@@ -218,6 +219,11 @@ body {
     font-size: 20px;
     line-height: 32px;
     margin-left: 30px;
+}
+.card-restaurant:hover {
+    transform-origin: right;
+    transform: rotate(2deg);
+    box-shadow: 10px 20px 3px rgba(51, 51, 51, 0.5)
 }
 .rating {
     margin-right: 26px;
@@ -279,6 +285,10 @@ body {
 .footer-link:not(:last-child) {
     margin-right: 15px;
 }
+.footer-link:hover {
+    background-color: rgba(255, 241, 183, 0.5);
+    border-radius: 5px;
+}
 .footer-nav {
     margin-right: auto;
     margin-left: 35px;
@@ -286,11 +296,28 @@ body {
 .social-links {
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 .social-link:not(:last-child) {
     margin-right: 21px;
 }
+.social-link:hover {
+    animation: mayatnik 1s infinite linear;
+}
 
+
+@keyframes mayatnik {
+    from, to{
+        transform: skewY(0);
+    }
+    33% {
+        transform: skewY(6deg);
+    }
+    66% {
+        transform: skewY(-6deg);
+    }
+
+}
 .back_to_top {
     position: fixed;
     bottom: 80px;
@@ -352,6 +379,13 @@ body {
     background-color: transparent;
     outline: none;
     cursor: pointer;
+    transition-duration: .2s;
+}
+.close:hover {
+    transform: scale(1.2);
+}
+.close:active {
+    transform: scale(1.1);
 }
 .food-row {
     display: flex;
@@ -383,6 +417,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #FFFFFF;
+    cursor: pointer;
 
 border: 1px solid #40A9FF;
 box-sizing: border-box;
