@@ -1,0 +1,13 @@
+input {
+    border: none;
+    outline: none;
+}
+.text {
+    min-width: 150px;
+}
+.save, .cancel {
+    display: none;
+}
+.buttons {
+    display: flex;
+}

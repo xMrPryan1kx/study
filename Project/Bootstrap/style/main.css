@@ -1,0 +1,34 @@
+html {
+  font-size: 10px;
+}
+.button {
+  background-color: #feb404;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+}
+section {
+  padding: 10rem 0;
+}
+main {
+  padding: 3rem 0;
+}
+.header {
+  height: 7rem;
+}
+.wrap {
+  display: table;
+}
+.phone-link {
+  display: inline-block;
+  color: #1a1820;
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+.row-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

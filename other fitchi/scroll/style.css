@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.button-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.button {
+    padding: 10px 20px;
+    background-color: tomato;
+    border: none;
+    color: #fff;
+}
+.section {
+    height: 100vh;
+    background-color: pink;
+}
+.footer {
+height: 100vh;
+background-color: #333;
+}

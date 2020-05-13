@@ -1,0 +1,46 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    max-width: 1200px;
+    margin-top: 50px;
+}
+.todo-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-ul {
+    list-style: none;
+    
+}
+.todo-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    background-color: rgba(112, 97, 97, 0.315);
+    padding-left: 15px;
+}
+.task-header, .delete {
+    margin: 0;
+}
+.delete {
+    margin-left: 15px;
+    color: red;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.create-task {
+    margin-top: 25px;
+}
+
+.done {
+    background-color: rgba(81, 252, 90, 0.966);
+}
+.delete-done {
+    color: green;
+}
