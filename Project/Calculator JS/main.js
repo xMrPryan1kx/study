@@ -120,3 +120,5 @@ const calculation = (totalCost = 0, anInitialFee = 10000, creditTerm = 1) => {
 
     }
 }
+
+
