@@ -76,3 +76,19 @@ function probs(hops1, hops2, hops3, hops4) {
 /*var pak4 = */itemWork(button4,item4,teacher4,item5,teacher5);
 /*var pak5 = */itemWork(button5,item5,teacher5,item1,teacher1);
 
+
+let person = {
+    age: 27,
+    name: 'Max',
+    job: 'Frontend',
+    displayInfo: function (ms) {
+
+        setTimeout(function () {
+            console.log('name: ', this.name)
+            console.log('age: ', this.age)
+            console.log('job: ', this.job)
+        }.bind(this), ms)
+    }
+}
+
+person.displayInfo(1000)
